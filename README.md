@@ -1,5 +1,6 @@
-CLI Haste client ![pypi](http://badge.fury.io/py/haste-client.png)
+CLI Haste client
 ================
+![version](http://badge.fury.io/py/haste-client.png)  ![downloads](https://pypip.in/d/haste-client/badge.png)
 
 A simple client for [Haste server](https://github.com/seejohnrun/haste-server) written in Python.
 
