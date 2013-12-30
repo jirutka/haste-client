@@ -11,6 +11,8 @@ Use pip or easy_install:
 
     pip install haste-client
 
+Gentoo users can use [haste-client](https://github.com/cvut/gentoo-overlay/tree/master/www-apps/haste-client) ebuild from [CVUT Overlay](https://github.com/cvut/gentoo-overlay).
+
 Haste client needs Python 2.6+ or 3.x (it was tested on 2.7 and 3.3) and following modules:
 
 *  [requests](https://github.com/kennethreitz/requests)
