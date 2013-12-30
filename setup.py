@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name='haste-client',
     version='1.0',
-    py_modules=['haste'],
+    scripts=['haste'],
     url='https://github.com/jirutka/haste-client',
     license='MIT',
     author='Jakub Jirutka',

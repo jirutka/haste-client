@@ -2,5 +2,5 @@
 LICENSE
 MANIFEST.in
 README.md
-haste.py
+haste
 setup.py
