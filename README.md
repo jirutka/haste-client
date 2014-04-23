@@ -1,6 +1,7 @@
 CLI Haste client
 ================
-[![version](http://badge.fury.io/py/haste-client.png)](https://pypi.python.org/pypi/haste-client)  [![downloads](https://pypip.in/d/haste-client/badge.png)](https://pypi.python.org/pypi/haste-client)
+[![version](https://badge.fury.io/py/haste-client.svg)](https://pypi.python.org/pypi/haste-client)
+[![downloads](https://pypip.in/d/haste-client/badge.svg)](https://pypi.python.org/pypi/haste-client)
 
 A simple client for [Haste server](https://github.com/seejohnrun/haste-server) written in Python.
 
@@ -13,7 +14,7 @@ Use pip or easy_install:
 
 Gentoo users can use [haste-client](https://github.com/cvut/gentoo-overlay/tree/master/www-apps/haste-client) ebuild from [CVUT Overlay](https://github.com/cvut/gentoo-overlay).
 
-Haste client needs Python 2.6+ or 3.x (it was tested on 2.7 and 3.3) and following modules:
+Haste client needs Python 2.6+ or 3.x (it was tested on 2.7, 3.3 and 3.4) and following modules:
 
 *  [requests](https://github.com/kennethreitz/requests)
 *  [docopt](https://github.com/docopt/docopt) >= 0.3.0
