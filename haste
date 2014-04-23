@@ -28,7 +28,7 @@ DEFAULTS = {
     'timeout': 3
 }
 
-kwargs = docopt(__doc__, version='haste 1.0')
+kwargs = docopt(__doc__, version='haste 1.0.1')
 
 
 def run(**kwargs):
@@ -45,7 +45,8 @@ def create_snippet(data, baseurl, timeout, raw):
     baseurl and returns URL of the created snippet.
     """
     try:
-        response = requests.post(baseurl + "/documents", data, timeout=timeout)
+        url = baseurl + "/documents"
+        response = requests.post(url, data.encode('utf-8'), timeout=timeout)
     except Timeout:
         exit("Error: connection timed out")
 
