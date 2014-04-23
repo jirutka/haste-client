@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 """
 haste - a CLI client for Haste server.
@@ -14,6 +15,13 @@ FILE          read from a file.
 -v --version  show version information.
 -r --raw      return a URL to the raw paste data.
 """
+
+import sys
+# For Python 2 set default encoding to 'UTF-8' instead of 'ascii'.
+# http://stackoverflow.com/q/11741574/2217862
+if sys.version_info < (3, 0):
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
 
 import json
 import requests
