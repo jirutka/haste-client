@@ -15,6 +15,7 @@ FILE          read from a file.
 -v --version  show version information.
 -r --raw      return a URL to the raw paste data.
 """
+__version__ = '1.0.1'
 
 import sys
 # For Python 2 set default encoding to 'UTF-8' instead of 'ascii'.
@@ -28,7 +29,7 @@ import requests
 from docopt import docopt
 from os.path import expanduser
 from requests.exceptions import Timeout
-from sys import stdout, stdin, exit
+from sys import stdin, exit
 
 CONFIGS = [expanduser('~/.hastec'), '/etc/hastec.conf']
 DEFAULTS = {
@@ -36,15 +37,14 @@ DEFAULTS = {
     'timeout': 3
 }
 
-kwargs = docopt(__doc__, version='haste 1.0.1')
 
-
-def run(**kwargs):
+def main(**kwargs):
     config = load_config()
     filesrc = kwargs['FILE'] and kwargs['FILE'] != '-'
     data = read_file(kwargs['FILE']) if filesrc else read_stdin()
+
     url = create_snippet(data, config['server_url'], config['timeout'], kwargs['--raw'])
-    stdout.write(url + '\n')
+    print(url)
 
 
 def create_snippet(data, baseurl, timeout, raw):
@@ -104,9 +104,7 @@ def parse_config(path):
                     if '=' in line and line.strip()[:1] != '#') }
 
 
-def main():
-    run(**kwargs)
-
+kwargs = docopt(__doc__, version='haste ' + __version__)
 
 if __name__ == "__main__":
-    run(**kwargs)
+    main(**kwargs)
