@@ -15,7 +15,7 @@ FILE          read from a file.
 -v --version  show version information.
 -r --raw      return a URL to the raw paste data.
 """
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 import sys
 # For Python 2 set default encoding to 'UTF-8' instead of 'ascii'.
