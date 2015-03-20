@@ -54,7 +54,7 @@ def create_snippet(data, baseurl, timeout, raw):
     """
     try:
         url = baseurl + "/documents"
-        response = requests.post(url, data.encode('utf-8'), timeout=timeout)
+        response = requests.post(url, data.encode('utf-8'), timeout=float(timeout))
     except Timeout:
         exit("Error: connection timed out")
 
