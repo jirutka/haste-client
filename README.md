@@ -3,7 +3,7 @@ CLI Haste client
 [![version](https://img.shields.io/pypi/v/haste-client.svg?style=flat)](https://pypi.python.org/pypi/haste-client)
 [![downloads](https://img.shields.io/pypi/dm/haste-client.svg?style=flat)](https://pypi.python.org/pypi/haste-client)
 
-A simple client for [Haste server](https://github.com/seejohnrun/haste-server) written in Python.
+A simple client for [Haste server](https://github.com/jirutka/haste-server) written in Python.
 
 
 ## Installation
